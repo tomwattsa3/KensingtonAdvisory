@@ -31,19 +31,13 @@ const Booking: React.FC = () => {
         </div>
 
         {/* Split Layout Card */}
-        <div className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col lg:flex-row lg:min-h-[700px]">
+        <div className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-visible flex flex-col lg:flex-row">
 
             {/* Left: Booking Calendar Widget */}
-            <div className="lg:w-3/5 relative bg-white h-[800px] md:h-[700px] lg:h-auto">
-                 {/* 
-                    INSTRUCTIONS: 
-                    Paste your booking widget HTML (iframe, script, etc) inside this div.
-                    Ensure it takes up the full width/height or uses the container's styling.
-                 */}
+            <div className="lg:w-3/5 bg-white min-h-[600px]">
                  <iframe
                     src="https://api.leadconnectorhq.com/widget/booking/limyj0BTQvbkmkRxO9YZ"
-                    style={{ width: '100%', height: '100%', border: 'none', overflow: 'hidden' }}
-                    scrolling="no"
+                    style={{ width: '100%', minHeight: '600px', border: 'none' }}
                     id="limyj0BTQvbkmkRxO9YZ_1769589009288"
                  />
             </div>
