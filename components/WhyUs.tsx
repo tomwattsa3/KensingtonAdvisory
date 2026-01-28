@@ -3,7 +3,7 @@ import { Shield, Zap, Globe, TrendingUp, Check } from 'lucide-react';
 
 const WhyUs: React.FC = () => {
   return (
-    <div className="bg-slate-50 py-24 px-4 relative overflow-hidden">
+    <div className="bg-slate-50 py-16 px-4 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-cyan/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-purple/5 rounded-full blur-[100px] pointer-events-none" />
@@ -12,8 +12,15 @@ const WhyUs: React.FC = () => {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left: Sales Copy */}
             <div>
-               <div className="inline-block px-4 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-brand-purple font-bold text-xs uppercase tracking-wider mb-8">
+               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-brand-purple font-bold text-xs uppercase tracking-wider mb-8">
                   The Kensington Standard
+                  <div className="w-5 h-5 bg-gradient-to-br from-blue-500 to-brand-purple rounded-full flex items-center justify-center text-white">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" clipRule="evenodd" d="M12 2C12.5523 2 13 2.44772 13 3V4.18378C13.8655 4.5857 14.5463 5.38555 14.8569 6.31713C15.9323 6.04603 17 6.87784 17 7.96913V10H7V7.96913C7 6.87784 8.06772 6.04603 9.14312 6.31713C9.45369 5.38555 10.1345 4.5857 11 4.18378V3C11 2.44772 11.4477 2 12 2ZM11 11H13V16H15V18H13V20H15V22H11V11ZM9 8H15V9H9V8Z" />
+                      <path d="M10 3.5H14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                      <path d="M12 1.5V4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                  </div>
                </div>
                
                <h2 className="text-4xl md:text-5xl font-extrabold text-navy-900 leading-tight mb-6">
