@@ -31,10 +31,10 @@ const Booking: React.FC = () => {
         </div>
 
         {/* Split Layout Card */}
-        <div className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-visible flex flex-col lg:flex-row">
+        <div className="bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col lg:flex-row">
 
             {/* Left: Booking Calendar Widget */}
-            <div className="lg:w-3/5 bg-white min-h-[600px]">
+            <div className="lg:w-3/5 bg-white min-h-[600px] rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none">
                  <iframe
                     src="https://api.leadconnectorhq.com/widget/booking/limyj0BTQvbkmkRxO9YZ"
                     style={{ width: '100%', minHeight: '600px', border: 'none' }}
@@ -43,7 +43,7 @@ const Booking: React.FC = () => {
             </div>
 
             {/* Right: Contact Details (Darker) - Widened to 40% (2/5) */}
-            <div className="lg:w-2/5 bg-navy-900 p-10 lg:p-16 xl:p-20 text-white flex flex-col justify-center relative overflow-hidden">
+            <div className="lg:w-2/5 bg-navy-900 p-10 lg:p-16 xl:p-20 text-white flex flex-col justify-center relative overflow-hidden rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-brand-purple/10 rounded-full blur-[60px] pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-cyan/10 rounded-full blur-[60px] pointer-events-none" />
