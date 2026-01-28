@@ -24,7 +24,7 @@ const Process: React.FC = () => {
           
           <div className="bg-white/5 border border-white/10 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-sm whitespace-nowrap hidden md:block">
             <span className="text-slate-300 font-medium mr-2">Avg. Completion:</span>
-            <span className="text-white font-bold">29 Days</span>
+            <span className="text-white font-bold">28 Days</span>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ const Process: React.FC = () => {
            <ProcessCard 
             icon={<CreditCard size={24} className="text-white" />}
             iconBg="bg-brand-green"
-            days="DAY 20-29"
+            days="DAY 20-28"
             title="Open for Business"
             description="Emirates ID in hand, we unlock your bank accounts. You are now fully operational and officially tax-free."
             badgeColor="bg-brand-green"
