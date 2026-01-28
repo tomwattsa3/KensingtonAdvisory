@@ -31,10 +31,10 @@ const Booking: React.FC = () => {
         </div>
 
         {/* Split Layout Card */}
-        <div className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col lg:flex-row min-h-[700px]">
-            
+        <div className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col lg:flex-row lg:min-h-[700px]">
+
             {/* Left: Booking Calendar Widget */}
-            <div className="lg:w-3/5 relative bg-white h-[600px] lg:h-auto">
+            <div className="lg:w-3/5 relative bg-white h-[800px] md:h-[700px] lg:h-auto">
                  {/* 
                     INSTRUCTIONS: 
                     Paste your booking widget HTML (iframe, script, etc) inside this div.
