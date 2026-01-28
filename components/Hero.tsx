@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center text-center">
         
         {/* Main Heading - Adjusted margin top since pill is gone */}
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-8 leading-[1.35] drop-shadow-xl mt-8 px-2">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-5 md:mb-8 leading-[1.35] drop-shadow-xl mt-8 px-2">
           Helping UK Founders Set Up <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400 animate-gradient-x">
              Their Business & Relocate To Dubai
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
         </h1>
 
         {/* Subtext */}
-        <p className="text-slate-400 text-base md:text-xl lg:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed font-light px-2">
+        <p className="text-slate-400 text-sm md:text-xl lg:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed font-light px-2">
           Stop paying 50% tax. Relocate your operations to a Dubai Free Zone, keep your profits, and enjoy the sun.
         </p>
 
