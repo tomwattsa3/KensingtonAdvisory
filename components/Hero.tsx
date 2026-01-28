@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center text-center">
         
         {/* Main Heading - Adjusted margin top since pill is gone */}
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-5 md:mb-8 leading-[1.35] drop-shadow-xl mt-8 px-2">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-5 md:mb-8 leading-[1.35] md:leading-[1.45] drop-shadow-xl mt-8 px-2">
           Helping UK Founders Set Up <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-white to-red-500">
              Their Business & Relocate To Dubai
