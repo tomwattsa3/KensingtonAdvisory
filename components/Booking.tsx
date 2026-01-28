@@ -94,12 +94,12 @@ const Booking: React.FC = () => {
                           href="https://wa.link/cm1c43"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-3 bg-brand-green/90 hover:bg-brand-green text-white pl-4 pr-6 py-3 rounded-full font-bold shadow-[0_10px_30px_rgba(132,204,22,0.3)] hover:scale-105 hover:shadow-[0_15px_40px_rgba(132,204,22,0.4)] transition-all group"
+                          className="inline-flex items-center justify-center gap-2 md:gap-3 bg-brand-green/90 hover:bg-brand-green text-white pl-3 pr-4 md:pl-4 md:pr-6 py-2.5 md:py-3 rounded-full font-bold shadow-[0_10px_30px_rgba(132,204,22,0.3)] hover:scale-105 hover:shadow-[0_15px_40px_rgba(132,204,22,0.4)] transition-all group"
                         >
-                          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                            <MessageCircle size={16} className="text-white" />
+                          <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors flex-shrink-0">
+                            <MessageCircle size={14} className="text-white md:w-4 md:h-4" />
                           </div>
-                          <span className="tracking-wide text-sm">Chat With Us On WhatsApp</span>
+                          <span className="tracking-wide text-xs md:text-sm whitespace-nowrap">Chat With Us On WhatsApp</span>
                         </a>
                     </div>
                 </div>
