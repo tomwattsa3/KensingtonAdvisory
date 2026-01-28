@@ -21,89 +21,84 @@ const TaxComparison: React.FC = () => {
             </p>
         </div>
 
-        {/* Comparison Card */}
-        <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden mb-16">
-            
-            {/* Scenario Banner */}
-            <div className="bg-slate-100 border-b border-slate-200 p-4 text-center">
-                <p className="text-slate-600 text-sm font-medium">
-                    Scenario: Annual Revenue <span className="text-navy-900 font-bold">£550,000</span> • Net Profit <span className="text-navy-900 font-bold">£240,000</span>
-                </p>
-            </div>
+        {/* Scenario Banner */}
+        <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-4 text-center mb-6">
+            <p className="text-slate-600 text-sm font-medium">
+                Scenario: Annual Revenue <span className="text-navy-900 font-bold">£550,000</span> • Net Profit <span className="text-navy-900 font-bold">£240,000</span>
+            </p>
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2">
-                
-                {/* UK Side (The Pain) */}
-                <div className="p-8 md:p-12 bg-slate-50 border-b md:border-b-0 md:border-r border-slate-200 relative">
-                    <div className="flex items-center gap-3 mb-8">
-                        <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">🇬🇧</div>
-                        <h3 className="text-2xl font-bold text-navy-900">UK Ltd Company</h3>
+        {/* Comparison Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+
+            {/* UK Side (The Pain) */}
+            <div className="p-8 md:p-12 bg-white rounded-2xl shadow-lg border border-slate-200 relative">
+                <div className="flex items-center gap-3 mb-8">
+                    <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">🇬🇧</div>
+                    <h3 className="text-2xl font-bold text-navy-900">UK Ltd Company</h3>
+                </div>
+
+                <div className="space-y-6">
+                    <Row label="Annual Company Profit" value="£240,000" isHeader />
+
+                    <div className="p-4 bg-red-50 rounded-xl border border-red-100 space-y-3">
+                         <Row label="Corp Tax Rate" value="~25%" subtext="(Marginal relief applies)" />
+                         <Row label="Corp Tax Paid" value="-£59,850" isNegative />
                     </div>
 
-                    <div className="space-y-6">
-                        <Row label="Annual Company Profit" value="£240,000" isHeader />
-                        
-                        <div className="p-4 bg-red-50 rounded-xl border border-red-100 space-y-3">
-                             <Row label="Corp Tax Rate" value="~25%" subtext="(Marginal relief applies)" />
-                             <Row label="Corp Tax Paid" value="-£59,850" isNegative />
-                        </div>
-                        
-                        <Row label="Profit After Corp Tax" value="£180,150" />
-                        
-                        <div className="p-4 bg-red-50 rounded-xl border border-red-100 space-y-3">
-                             <Row label="Dividend Tax Rate" value="33.75% - 39.35%" subtext="(Personal allowance tapered)" />
-                             <Row label="Dividend Tax Paid" value="-£54,353" isNegative />
-                        </div>
+                    <Row label="Profit After Corp Tax" value="£180,150" />
 
-                        <div className="pt-6 border-t border-slate-200">
-                            <Row label="Total Tax Paid" value="-£114,203" isTotalNegative />
-                            <Row label="Net To You" value="£125,797" isLarge />
-                            <div className="mt-2 text-right">
-                                <span className="inline-block bg-slate-200 text-slate-600 text-xs font-bold px-2 py-1 rounded">Effective Tax Rate: ~48%</span>
-                            </div>
+                    <div className="p-4 bg-red-50 rounded-xl border border-red-100 space-y-3">
+                         <Row label="Dividend Tax Rate" value="33.75% - 39.35%" subtext="(Personal allowance tapered)" />
+                         <Row label="Dividend Tax Paid" value="-£54,353" isNegative />
+                    </div>
+
+                    <div className="pt-6 border-t border-slate-200">
+                        <Row label="Total Tax Paid" value="-£114,203" isTotalNegative />
+                        <Row label="Net To You" value="£125,797" isLarge />
+                        <div className="mt-2 text-right">
+                            <span className="inline-block bg-slate-200 text-slate-600 text-xs font-bold px-2 py-1 rounded">Effective Tax Rate: ~48%</span>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                {/* Dubai Side (The Gain) */}
-                <div className="p-8 md:p-12 bg-white relative overflow-hidden ring-2 ring-brand-green/50 shadow-[0_0_40px_rgba(132,204,22,0.3)]">
-                    {/* Subtle gradient background */}
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-[80px] pointer-events-none" />
-                    
-                    <div className="flex items-center gap-3 mb-8 relative z-10">
-                        <div className="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-lg">🇦🇪</div>
-                        <h3 className="text-2xl font-bold text-navy-900">Dubai (UAE) Company</h3>
-                        <span className="ml-auto bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Winner</span>
+            {/* Dubai Side (The Gain) - Glows forward */}
+            <div className="p-8 md:p-12 bg-white rounded-2xl border-2 border-brand-green/40 relative overflow-hidden shadow-[0_10px_50px_rgba(132,204,22,0.25)] md:-translate-y-2 hover:-translate-y-3 transition-transform duration-300">
+                {/* Subtle gradient background */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-[80px] pointer-events-none" />
+
+                <div className="flex items-center gap-3 mb-8 relative z-10">
+                    <div className="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-lg">🇦🇪</div>
+                    <h3 className="text-2xl font-bold text-navy-900">Dubai (UAE) Company</h3>
+                    <span className="ml-auto bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Winner</span>
+                </div>
+
+                <div className="space-y-6 relative z-10">
+                    <Row label="Annual Company Profit" value="£240,000" isHeader />
+
+                    <div className="p-4 bg-green-50 rounded-xl border border-green-100 space-y-3">
+                         <Row label="Corp Tax Rate" value="0%" subtext="(Small Business Relief: Rev < £600k)" />
+                         <Row label="Corp Tax Paid" value="£0" highlight />
                     </div>
 
-                    <div className="space-y-6 relative z-10">
-                        <Row label="Annual Company Profit" value="£240,000" isHeader />
-                        
-                        <div className="p-4 bg-green-50 rounded-xl border border-green-100 space-y-3">
-                             {/* UPDATED: 0% Tax because revenue < £600k */}
-                             <Row label="Corp Tax Rate" value="0%" subtext="(Small Business Relief: Rev < £600k)" />
-                             <Row label="Corp Tax Paid" value="£0" highlight />
-                        </div>
-                        
-                        {/* Profit remains full */}
-                        <Row label="Profit After Corp Tax" value="£240,000" />
-                        
-                        <div className="p-4 bg-green-50 rounded-xl border border-green-100 space-y-3">
-                             <Row label="Dividend Tax Rate" value="0%" />
-                             <Row label="Dividend Tax Paid" value="£0" highlight />
-                        </div>
+                    <Row label="Profit After Corp Tax" value="£240,000" />
 
-                        <div className="pt-6 border-t border-slate-100">
-                            <Row label="Total Tax Paid" value="£0" isTotalPositive />
-                            <Row label="Net To You" value="£240,000" isLargeGreen />
-                            <div className="mt-2 text-right">
-                                <span className="inline-block bg-brand-green/10 text-brand-green text-xs font-bold px-2 py-1 rounded">Effective Tax Rate: 0%</span>
-                            </div>
+                    <div className="p-4 bg-green-50 rounded-xl border border-green-100 space-y-3">
+                         <Row label="Dividend Tax Rate" value="0%" />
+                         <Row label="Dividend Tax Paid" value="£0" highlight />
+                    </div>
+
+                    <div className="pt-6 border-t border-slate-100">
+                        <Row label="Total Tax Paid" value="£0" isTotalPositive />
+                        <Row label="Net To You" value="£240,000" isLargeGreen />
+                        <div className="mt-2 text-right">
+                            <span className="inline-block bg-brand-green/10 text-brand-green text-xs font-bold px-2 py-1 rounded">Effective Tax Rate: 0%</span>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
 
         {/* Rules Explanation Section */}
