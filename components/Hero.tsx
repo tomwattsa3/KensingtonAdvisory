@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#0f172a] flex flex-col items-center justify-center pt-32 pb-20 px-4 overflow-hidden">
+    <div className="relative min-h-screen bg-[#0f172a] flex flex-col items-center justify-center pt-16 md:pt-32 pb-20 px-4 overflow-hidden">
       
       {/* Background Gradients - Midnight Blue Theme */}
       {/* A deep radial gradient that keeps the center slightly illuminated */}
@@ -34,9 +34,17 @@ const Hero: React.FC = () => {
         </h1>
 
         {/* Subtext */}
-        <p className="text-slate-400 text-sm md:text-xl lg:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed font-light px-2">
+        <p className="text-slate-400 text-sm md:text-xl lg:text-2xl max-w-2xl mx-auto mb-8 leading-relaxed font-light px-2">
           Stop paying 50% tax. Relocate your operations to a Dubai Free Zone, keep your profits, and enjoy the sun.
         </p>
+
+        {/* Video Placeholder - Replace with Wistia/Vidalytics embed */}
+        <div className="w-full max-w-3xl mx-auto mb-10 px-2">
+          <div className="relative aspect-video bg-slate-800/50 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
+            {/* PASTE YOUR WISTIA OR VIDALYTICS EMBED CODE HERE */}
+            <div className="text-slate-500 text-sm">Video Placeholder</div>
+          </div>
+        </div>
 
         {/* Main Call To Action (Below Video) */}
         <button 
