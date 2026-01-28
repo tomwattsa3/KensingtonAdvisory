@@ -64,7 +64,7 @@ const TaxComparison: React.FC = () => {
             </div>
 
             {/* Dubai Side (The Gain) - Glows forward */}
-            <div className="p-8 md:p-12 bg-white rounded-2xl border-2 border-brand-green/40 relative overflow-hidden shadow-[0_10px_50px_rgba(132,204,22,0.25)] md:-translate-y-2 hover:-translate-y-3 transition-transform duration-300">
+            <div className="p-8 md:p-12 bg-white rounded-2xl border-2 border-brand-green relative overflow-hidden shadow-[0_0_20px_rgba(132,204,22,0.5),0_0_40px_rgba(132,204,22,0.3),0_10px_50px_rgba(132,204,22,0.2)] md:-translate-y-2 hover:-translate-y-3 transition-transform duration-300">
                 {/* Subtle gradient background */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-[80px] pointer-events-none" />
 
