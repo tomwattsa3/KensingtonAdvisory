@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Calendar, Mail, Phone, MapPin } from 'lucide-react';
 
 const Booking: React.FC = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://link.msgsndr.com/js/form_embed.js';
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div id="booking" className="bg-slate-50 py-24 px-4 border-t border-slate-200">
       <div className="max-w-6xl mx-auto">
@@ -30,17 +40,12 @@ const Booking: React.FC = () => {
                     Paste your booking widget HTML (iframe, script, etc) inside this div.
                     Ensure it takes up the full width/height or uses the container's styling.
                  */}
-                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-50">
-                    <div className="border-2 border-dashed border-slate-300 rounded-xl p-10 text-center max-w-md mx-auto">
-                        <p className="text-navy-900 font-bold text-xl mb-3">Booking Widget Placeholder</p>
-                        <p className="text-slate-500 mb-6">
-                            Paste your Calendly, HubSpot, or custom HTML booking code here.
-                        </p>
-                        <div className="bg-white p-3 rounded text-xs font-mono text-slate-500 break-all border border-slate-200">
-                            &lt;!-- Your Calendar Iframe --&gt;
-                        </div>
-                    </div>
-                 </div>
+                 <iframe
+                    src="https://api.leadconnectorhq.com/widget/booking/limyj0BTQvbkmkRxO9YZ"
+                    style={{ width: '100%', height: '100%', border: 'none', overflow: 'hidden' }}
+                    scrolling="no"
+                    id="limyj0BTQvbkmkRxO9YZ_1769589009288"
+                 />
             </div>
 
             {/* Right: Contact Details (Darker) - Widened to 40% (2/5) */}
