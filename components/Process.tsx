@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Building, Plane, CreditCard, ChevronRight } from 'lucide-react';
+import { FileText, Building, Plane, CreditCard } from 'lucide-react';
 
 const Process: React.FC = () => {
   return (
@@ -80,15 +80,6 @@ const Process: React.FC = () => {
           />
         </div>
 
-        {/* Slider Navigation (Visual Only for this demo) */}
-        <div className="flex justify-end gap-2 mt-8 md:hidden">
-            <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500">
-                <ChevronRight className="rotate-180" size={20} />
-            </div>
-            <div className="w-10 h-10 rounded-full bg-brand-cyan flex items-center justify-center text-white shadow-lg">
-                <ChevronRight size={20} />
-            </div>
-        </div>
 
       </div>
     </div>
