@@ -27,9 +27,9 @@ const Hero: React.FC = () => {
         
         {/* Main Heading - Adjusted margin top since pill is gone */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight mb-8 leading-[1.1] drop-shadow-xl mt-8">
-          Helping UK Founders <br className="hidden md:block" />
+          Helping UK Founders Set Up <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400 animate-gradient-x">
-             Relocate to Dubai.
+             Their Business & Relocate To Dubai
           </span>
         </h1>
 
