@@ -112,7 +112,7 @@ const ProcessCard: React.FC<ProcessCardProps> = ({ icon, iconBg, days, title, de
       {/* Glow Effect */}
       <div className={`absolute -inset-1 ${glowColor} rounded-[2rem] opacity-20 blur-xl group-hover:opacity-40 transition duration-500`}></div>
       
-      <div className={`relative bg-white rounded-3xl p-8 shadow-xl border border-transparent hover:border-slate-200 flex flex-col h-full overflow-hidden ${isCelebratory ? 'ring-4 ring-brand-green/20' : ''}`}>
+      <div className={`relative bg-white rounded-3xl p-8 shadow-xl border hover:border-slate-200 flex flex-col h-full overflow-hidden ${isCelebratory ? 'border-brand-green shadow-[0_0_12px_rgba(132,204,22,0.15),0_0_24px_rgba(132,204,22,0.08)]' : 'border-transparent'}`}>
         
         {isCelebratory && <ConfettiOverlay />}
 
