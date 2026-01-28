@@ -94,7 +94,7 @@ const TaxComparison: React.FC = () => {
 
                     <div className="pt-6 border-t border-slate-100">
                         <Row label="Total Tax Paid" value="£0" isTotalPositive />
-                        <Row label="Net To You" value="£240,000" isLargeGreen />
+                        <Row label="Net To You" value="£240,000" isLarge />
                         <div className="mt-2 text-right">
                             <span className="inline-block bg-brand-green/10 text-brand-green text-xs font-bold px-2 py-1 rounded">Effective Tax Rate: 0%</span>
                         </div>
