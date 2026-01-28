@@ -25,8 +25,8 @@ const TaxComparison: React.FC = () => {
         <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-4 text-center mb-6">
             <p className="text-slate-600 text-sm font-medium">
                 Scenario: Annual Revenue <span className="text-navy-900 font-bold">£550,000</span>
-            </p>
-            <p className="text-slate-600 text-sm font-medium">
+                <span className="hidden md:inline"> • </span>
+                <br className="md:hidden" />
                 Net Profit <span className="text-navy-900 font-bold">£240,000</span>
             </p>
         </div>
