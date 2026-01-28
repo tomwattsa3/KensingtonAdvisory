@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Calendar, Mail, Phone, MapPin } from 'lucide-react';
+import { Calendar, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 const Booking: React.FC = () => {
   useEffect(() => {
@@ -60,7 +60,7 @@ const Booking: React.FC = () => {
                             </div>
                             <div className="overflow-hidden">
                                 <p className="text-slate-400 text-xs uppercase tracking-wider font-semibold mb-1">Email Us</p>
-                                <a href="mailto:hello@kensingtonadvisory.com" className="text-base font-medium hover:text-brand-purple transition-colors whitespace-nowrap block">hello@kensingtonadvisory.com</a>
+                                <a href="mailto:hello@kensingtonadvisory.ae" className="text-base font-medium hover:text-brand-purple transition-colors whitespace-nowrap block">hello@kensingtonadvisory.ae</a>
                             </div>
                         </div>
 
@@ -86,6 +86,16 @@ const Booking: React.FC = () => {
                                     503 Mika Residence,<br />
                                     Production City, Dubai
                                 </p>
+                            </div>
+                        </div>
+
+                        {/* WhatsApp Chat */}
+                        <div className="flex items-center gap-4 group">
+                            <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
+                                <MessageCircle size={18} className="text-white" />
+                            </div>
+                            <div>
+                                <a href="https://wa.link/cm1c43" target="_blank" rel="noopener noreferrer" className="text-base font-medium hover:text-brand-green transition-colors">Chat With Us On WhatsApp</a>
                             </div>
                         </div>
                     </div>
