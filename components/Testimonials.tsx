@@ -89,12 +89,6 @@ const Testimonials: React.FC = () => {
                 ))}
             </div>
             
-            {/* Bottom visual element */}
-            <div className="mt-16 text-center border-t border-white/5 pt-12">
-               <p className="text-slate-500 text-sm">
-                 Rated <span className="text-white font-bold">4.9/5</span> on TrustPilot by UK Business Owners
-               </p>
-            </div>
         </div>
     </div>
   );
