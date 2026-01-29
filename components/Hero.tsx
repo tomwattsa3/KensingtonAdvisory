@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ArrowRight, Zap, ShieldCheck, Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  useEffect(() => {
+    const playerScript = document.createElement('script');
+    playerScript.src = 'https://fast.wistia.com/player.js';
+    playerScript.async = true;
+    document.body.appendChild(playerScript);
+
+    const embedScript = document.createElement('script');
+    embedScript.src = 'https://fast.wistia.com/embed/u4m8jpn96f.js';
+    embedScript.async = true;
+    embedScript.type = 'module';
+    document.body.appendChild(embedScript);
+
+    return () => {
+      document.body.removeChild(playerScript);
+      document.body.removeChild(embedScript);
+    };
+  }, []);
+
   const scrollToBooking = () => {
     const bookingSection = document.getElementById('booking');
     if (bookingSection) {
@@ -38,11 +56,18 @@ const Hero: React.FC = () => {
           Stop paying 50% tax. Relocate your operations to a Dubai Free Zone, keep your profits, and enjoy the sun.
         </p>
 
-        {/* Video Placeholder - Replace with Wistia/Vidalytics embed */}
+        {/* Wistia Video */}
         <div className="w-full max-w-3xl mx-auto mb-10 px-2">
-          <div className="relative aspect-video bg-slate-800/50 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
-            {/* PASTE YOUR WISTIA OR VIDALYTICS EMBED CODE HERE */}
-            <div className="text-slate-500 text-sm">Video Placeholder</div>
+          <div className="relative rounded-2xl border border-white/10 overflow-hidden">
+            <style>{`
+              wistia-player[media-id='u4m8jpn96f']:not(:defined) {
+                background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/u4m8jpn96f/swatch');
+                display: block;
+                filter: blur(5px);
+                padding-top: 55.83%;
+              }
+            `}</style>
+            <wistia-player media-id="u4m8jpn96f" aspect="1.791044776119403"></wistia-player>
           </div>
         </div>
 
