@@ -72,11 +72,11 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Main Call To Action (Below Video) */}
-        <button 
+        <button
           onClick={scrollToBooking}
-          className="bg-white text-slate-900 px-10 py-5 rounded-full font-bold text-lg shadow-[0_0_50px_rgba(255,255,255,0.2)] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:bg-slate-50 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 animate-pulse-slow"
+          className="bg-white text-slate-900 px-6 py-3 rounded-full font-semibold text-sm shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:shadow-[0_0_50px_rgba(255,255,255,0.3)] hover:bg-slate-50 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
         >
-          Book a Free Strategy Call <ArrowRight size={20} />
+          Book a Free Strategy Call <ArrowRight size={16} />
         </button>
 
       </div>
